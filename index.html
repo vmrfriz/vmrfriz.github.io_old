@@ -1,14 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Мой первый сайт на хостинге Github</title>
+	<title>Portland</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat:400,900|Noto+Sans&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-		<h1>Добро пожаловать</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repudiandae, rerum quae, doloribus exercitationem sequi iusto explicabo sit vel quisquam fugiat id amet dolorem molestiae voluptatibus expedita a earum quas ullam tenetur quaerat culpa officiis voluptates. Quis, necessitatibus incidunt eaque qui quae delectus dolor quam ex nulla sunt laudantium, a.</p>
-	</div>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__logo col-sm-3">
+					<a href="#">
+						<img src="img/portland.svg" alt="">
+					</a>
+				</div>
+				<div class="header__nav col-sm-6">
+					<ul class="nav-ul">
+						<li class="nav-ul__li">
+							<a href="#" class="nav-ul__a">Home</a>
+						</li>
+						<li class="nav-ul__li">
+							<a href="#" class="nav-ul__a">Devices</a>
+						</li>
+						<li class="nav-ul__li">
+							<a href="#" class="nav-ul__a">Delivery & Payment</a>
+						</li>
+						<li class="nav-ul__li">
+							<a href="#" class="nav-ul__a">Guarantee</a>
+						</li>
+						<li class="nav-ul__li">
+							<a href="#" class="nav-ul__a">About Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__buttons col-sm-3">
+					<div class="header__button-cart">
+						
+					</div>
+					<div class="header__button-signin">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__subnav">
+			<div class="container">
+				<div class="header__subnav-left col-sm-8">
+					<ul class="nav-ul">
+						<li class="nav-ul__li">
+							<a href="#" class="nav-ul__a nav-ul__a_uppercase">Top Sales</a>
+						</li>
+						<li class="nav-ul__li">
+							<a href="#" class="nav-ul__a nav-ul__a_uppercase">Brand Focus</a>
+						</li>
+						<li class="nav-ul__li">
+							<a href="#" class="nav-ul__a nav-ul__a_uppercase nav-ul__a_active">Hi-tech</a>
+						</li>
+						<li class="nav-ul__li">
+							<a href="#" class="nav-ul__a nav-ul__a_uppercase">Best Sellers</a>
+						</li>
+						<li class="nav-ul__li">
+							<a href="#" class="nav-ul__a nav-ul__a_uppercase">Projects</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__subnav-right col-sm-4"></div>
+			</div>
+		</div>
+	</header>
+	<section class="offer">
+		<div class="container">
+			<div class="offer__left col-sm-5 col-sm-push-1">
+				<h1 class="offer__heading">iPhone 6 32Gb<br>Black</h1>
+				<p class="offer__desc">At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</p>
+				<button class="offer__button">Buy now</button>
+			</div>
+			<div class="offer__right col-sm-5 col-sm-push-1">
+				<img src="img/iphone-6-space-gray.png" alt="iPhone" class="offer__right-image">
+			</div>
+		</div>
+	</section>
+	<section class="advantage">
+		<div class="container">
+			<h2 class="advantage__heading">Почему с нами работают?</h2>
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="img/advantage-1.png" alt="Преимущество 1">
+					<div class="advantage__subheading">Позвольте вашим<br>деньгам работать</div>
+					<div class="advantage__desc">Проценты по договорам займа выше банковских</div>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/advantage-2.png" alt="Преимущество 2">
+					<div class="advantage__subheading">Зарабатывайте<br>вместе с нами</div>
+					<div class="advantage__desc">Мы вкладываем собственные средства</div>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/advantage-3.png" alt="Преимущество 3">
+					<div class="advantage__subheading">Абсолютная<br>надежность</div>
+					<div class="advantage__desc">Все договоры займа обеспечены залогом</div>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/advantage-4.png" alt="Преимущество 4">
+					<div class="advantage__subheading">Никакх<br>рисков</div>
+					<div class="advantage__desc">Наша профессиональная деятельность застрахована</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>

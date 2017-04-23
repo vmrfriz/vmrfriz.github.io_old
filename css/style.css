@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'Arvo';
+	src: local('Arvo'), url('../fonts/arvo/arvo.woff2') format('woff2'), url('../fonts/arvo/arvo.woff') format('woff'), url('../fonts/arvo/arvo.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -6,32 +13,151 @@ html, body {
 }
 
 body {
-	font: 300 16px/1.6em Tahoma, Helvetica, Ubuntu, sans-serif;
-	color: #333;
-	background-color: #e5e5e5;
+	font: 400 16px/24pt Montserrat, sans-serif;
+	background-color: #f3f5f7;
+	color: #fff;
 }
 
-.container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 400px;
-	max-width: 80vw;
-	min-height: 250px;
+a,
+a:hover,
+a:focus,
+a:active {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+/*==========================
+---------- HEADER ----------
+==========================*/
+.header {
+	background-color: #ffffff;
+	
+}
+
+/*---------- HEADER TOP ----------*/
+.header__top {
+	color: #343e5c;
+	height: 90px;
+	width: 100%;
+	font-size: 14px;
+	border-bottom: 1px solid #f0f2f7;
+	box-sizing: border-box;
+}
+
+.header__logo {
+	height: 90px;
+	display: flex;
+	align-items: center;
+}
+
+.header__nav {
+	display: inline-block;
+	height: 90px;
+}
+
+.nav-ul {
+	padding: 0;
+	margin: 0;
+	height: inherit;
+}
+
+.nav-ul__li {
+	display: inline-block;
+	list-style: none;
+	padding: 0 15px;
+	height: inherit;
+}
+
+.nav-ul__li:first-of-type {
+	padding-left: 0;
+}
+
+.nav-ul__li:last-of-type {
+	padding-right: 0;
+}
+
+.nav-ul__a {
+	height: inherit;
+	display: flex;
+	align-items: center;
+}
+
+.nav-ul__a_active {
+	color: #343e5c;
+}
+
+.nav-ul__a_uppercase {
+	text-transform: uppercase;
+}
+
+/*---------- HEADER SUBNAV ----------*/
+.header__subnav {
+	color: #b9bed1;
+	height: 56px;
 	background-color: #fff;
-	border: 1px solid #e5e5e5;
-	padding: 20px;
-	box-shadow: 0 0 3px 0 solid #555;
+}
+
+.header__subnav-left {
+	height: 56px;
+	font-size: 11px;
+}
+
+/*==========================
+----------- OFFER ----------
+==========================*/
+.offer {
+	background-color: #1c1e23;
+	height: 500px;
+}
+
+/*---------- OFFER LEFT ----------*/
+.offer__left {
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.offer__heading {
+	font: 800 42px/1em Montserrat, sans-serif;
+}
+
+.offer__desc {
+	font: 300 16px/24px CrimsonText, sans-serif;
+}
+
+.offer__button {
+	font-size: 11px;
+	text-transform: uppercase;
+	width: 165px;
+	height: 42px;
+	background-color: #2754eb;
+	color: #fff;
+	border-radius: 100px;
+	border: 1px solid transparent;
+}
+
+/*---------- OFFER RIGHT ----------*/
+.offer__right {
 	text-align: center;
+	height: 500px;
+	overflow: hidden;
 }
 
-h1 {
-	font: inherit;
-	font-size: 40px;
-	line-height: 1em;
+.offer__right-image {
+	width: 90%;
+	padding: 0 10%;
+	overflow: hidden;
+	margin-top: -90px;
 }
 
-p {
-	color: #bbb;
+
+.advantage__subheading {
+	font: 22px/30px Arvo, sans-serif;
+	color: #3b3f6a;
+}
+
+.advantage__desc {
+	font: 20px/30px NotoSans, sans-serif;
+	color: #686c8a;
 }
