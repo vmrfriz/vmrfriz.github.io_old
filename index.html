@@ -7,21 +7,23 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat:400,900|Noto+Sans&amp;subset=cyrillic" rel="stylesheet">
 </head>
-<body style="overflow: hidden">
-	<div class="lightbox">
+<body style="overflow: hidden;">
+	<div class="lightbox" style="/*display:none*/">
 		<div class="lightbox__bg" id="lightbox__close"></div>
 		<div class="lightbox__block">
 			<h1 class="lightbox__heading">Здравствуй</h1>
 			<p class="lightbox__desc">
-				Это домашнее задание курса <a href="">Веб разработчик 7.0</a> от <a href="">Glo Academy</a>
+				Это домашнее задание курса <a href="https://vk.com/advanced_html_css_20_03_promo" class="link">Веб разработчик 7.0</a> от <a href="https://vk.com/glo_academy" class="link">Glo Academy</a>
 			</p>
 			<p class="lightbox__p">
 				<span class="lightbox__p-orange">В работе</span>
-				Первый блок - это домашнее задание №5. Оно ещё не доделано, но уже на финишной прямой
+				Первый блок - домашнее задание №5.<br>
+				Оно ещё не доделано, но уже на финишной прямой
 			</p>
 			<p class="lightbox__p">
-				<span class="lightbox__p-red">Не сделано</span>
-				Второй блок - домашнее задание №6. Создал начальную HTML-разметку, но стили ещё не писал
+				<span class="lightbox__p-green">Готово</span>
+				Второй блок - домашнее задание №6.<br>
+				Без адаптации. И так сойдёт :)
 			</p>
 		</div>
 	</div>
@@ -53,12 +55,18 @@
 					</ul>
 				</div>
 				<div class="header__buttons col-sm-3">
-					<div class="header__button-cart">
-						Cart
-					</div>
-					<div class="header__button-signin">
-						Sign in
-					</div>
+					<a href="#">
+						<div class="header__button-cart">
+							<div class="header__cart-icon"></div>
+							Cart
+							<span class="header__cart-counter">0</span>
+						</div>
+					</a>
+					<a href="#">
+						<div class="header__button-signin">
+							Sign in
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -101,25 +109,25 @@
 	</section>
 	<section class="advantage">
 		<div class="container">
-			<h2 class="advantage__heading">Почему с нами работают?</h2>
+			<h2 class="advantage__heading adventage__margin">Почему с нами работают?</h2>
 			<div class="row">
-				<div class="col-sm-3">
-					<img src="img/advantage-1.png" alt="Преимущество 1">
+				<div class="col-sm-3 adventage__block">
+					<img src="img/advantage-1.png" alt="Преимущество 1" class="adventage__img">
 					<div class="advantage__subheading">Позвольте вашим<br>деньгам работать</div>
 					<div class="advantage__desc">Проценты по договорам займа выше банковских</div>
 				</div>
-				<div class="col-sm-3">
-					<img src="img/advantage-2.png" alt="Преимущество 2">
+				<div class="col-sm-3 adventage__block">
+					<img src="img/advantage-2.png" alt="Преимущество 2" class="adventage__img">
 					<div class="advantage__subheading">Зарабатывайте<br>вместе с нами</div>
 					<div class="advantage__desc">Мы вкладываем собственные средства</div>
 				</div>
-				<div class="col-sm-3">
-					<img src="img/advantage-3.png" alt="Преимущество 3">
+				<div class="col-sm-3 adventage__block">
+					<img src="img/advantage-3.png" alt="Преимущество 3" class="adventage__img">
 					<div class="advantage__subheading">Абсолютная<br>надежность</div>
 					<div class="advantage__desc">Все договоры займа обеспечены залогом</div>
 				</div>
-				<div class="col-sm-3">
-					<img src="img/advantage-4.png" alt="Преимущество 4">
+				<div class="col-sm-3 adventage__block">
+					<img src="img/advantage-4.png" alt="Преимущество 4" class="adventage__img">
 					<div class="advantage__subheading">Никакх<br>рисков</div>
 					<div class="advantage__desc">Наша профессиональная деятельность застрахована</div>
 				</div>
