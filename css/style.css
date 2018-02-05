@@ -13,25 +13,26 @@ a {
 .link {
 	color: #0056b3;
 	position: relative;
+	white-space: nowrap;
 }
 
 .link:hover { text-decoration: none }
 
-.link:before,
 .link:after {
 	content: '';
 	position: absolute;
 	top: 100%;
+	left: 50%;
 	width: 0%;
 	height: 1px;
 	background-color: #0056b3;
-	transition: width .15s ease-out;
+	transition: all .15s ease-out;
 }
 
-.link:before { right: 50% }
-.link:after  { left:  50% }
-.link:hover:before,
-.link:hover:after { width: 50% }
+.link:hover:after {
+	width: 100%;
+	left: 0%;
+}
 
 .bg {
 	background-color: #eee;
