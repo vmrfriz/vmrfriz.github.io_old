@@ -1,148 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Portland</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat:400,900|Noto+Sans&amp;subset=cyrillic" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
-<body style="overflow: hidden;">
-	<div class="lightbox" style="/*display:none*/">
-		<div class="lightbox__bg" id="lightbox__close"></div>
-		<div class="lightbox__block">
-			<h1 class="lightbox__heading">Здравствуй</h1>
-			<p class="lightbox__desc">
-				Это домашнее задание курса <a href="https://vk.com/advanced_html_css_20_03_promo" class="link">Веб разработчик 7.0</a> от <a href="https://vk.com/glo_academy" class="link">Glo Academy</a>
-			</p>
-			<p class="lightbox__p">
-				<span class="lightbox__p-orange">В работе</span>
-				Первый блок - домашнее задание №5.<br>
-				Оно ещё не доделано, но уже на финишной прямой
-			</p>
-			<p class="lightbox__p">
-				<span class="lightbox__p-green">Готово</span>
-				Второй блок - домашнее задание №6.<br>
-				Без адаптации. И так сойдёт :)
-			</p>
+<body class="bg">
+	<div class="container-fluid h-100">
+		<div class="row h-100">
+
+			<!-- About -->
+			<div class="col-md-4">
+				<div class="row justify-content-center">
+					<div class="col-md-8 aboutme">
+						<div class="section section--rounded">
+							<div class="position-relative">
+								<img src="img/me.jpg" alt="My photo" class="img-fluid alt-text">
+								<div class="text-center padding h3 upper test">Валерий Гречуха</div>
+							</div>
+							<div class="section__heading"><i class="far fa-address-card"></i> Обо мне</div>
+							<div class="padding">Независимый web-разработчик из Украины. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nesciunt.</div>
+						</div>
+						<div class="section section--rounded">
+							<div class="section__heading"><i class="fas fa-link"></i> Связь</div>
+							<div class="grid-table">
+								<div class="row grid-row">
+									<div class="col gray">ВКонтакте</div>
+									<div class="col"><a href="https://vk.com/mr.friz" target="_blank" class="link">vk.com/mr.friz</a></div>
+								</div>
+								<div class="row grid-row">
+									<div class="col gray">Facebook</div>
+									<div class="col"><a href="https://fb.com/valera.ukr" target="_blank" class="link">fb.com/valera.ukr</a></div>
+								</div>
+								<div class="row grid-row">
+									<div class="col gray">Skype</div>
+									<div class="col"><a href="skype:mr.fr1z?chat" class="link">mr.fr1z</a></div>
+								</div>
+								<div class="row grid-row">
+									<div class="col gray">GitHub</div>
+									<div class="col"><a href="https://github.com/vmrfriz" target="_blank" class="link">github.com/vmrfriz</a></div>
+								</div>
+								<div class="row grid-row">
+									<div class="col gray">Twitter</div>
+									<div class="col"><a href="https://twitter.com/Valera_Freeze" target="_blank" class="link">twitter.com/vmrfriz</a></div>
+								</div>
+								<div class="row grid-row">
+									<div class="col gray">Instagram</div>
+									<div class="col"><a href="https://instagram.com/vmrfriz" target="_blank" class="link">instagram.com/vmrfriz</a></div>
+								</div>
+								<div class="row grid-row">
+									<div class="col gray">E-mail</div>
+									<div class="col"><a href="mailto:v.mrfriz@gmail.com" class="link">v.mrfriz@gmail.com</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section section--rounded">
+							<div class="section__heading"><i class="fas fa-code"></i> Навыки</div>
+							<div class="padding">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Projects -->
+			<div class="col-md-8 shadow section">
+				Hello, world
+			</div>
 		</div>
 	</div>
-	<header class="header">
-		<div class="header__top">
-			<div class="container">
-				<div class="header__logo col-sm-3">
-					<a href="#">
-						<img src="img/portland.svg" alt="">
-					</a>
-				</div>
-				<div class="header__nav col-sm-6">
-					<ul class="nav-ul">
-						<li class="nav-ul__li">
-							<a href="#" class="nav-ul__a">Home</a>
-						</li>
-						<li class="nav-ul__li">
-							<a href="#" class="nav-ul__a">Devices</a>
-						</li>
-						<li class="nav-ul__li">
-							<a href="#" class="nav-ul__a">Delivery & Payment</a>
-						</li>
-						<li class="nav-ul__li">
-							<a href="#" class="nav-ul__a">Guarantee</a>
-						</li>
-						<li class="nav-ul__li">
-							<a href="#" class="nav-ul__a">About Us</a>
-						</li>
-					</ul>
-				</div>
-				<div class="header__buttons col-sm-3">
-					<a href="#">
-						<div class="header__button-cart">
-							<div class="header__cart-icon"></div>
-							Cart
-							<span class="header__cart-counter">0</span>
-						</div>
-					</a>
-					<a href="#">
-						<div class="header__button-signin">
-							Sign in
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="header__subnav">
-			<div class="container">
-				<div class="header__subnav-left col-sm-8">
-					<ul class="nav-ul">
-						<li class="nav-ul__li">
-							<a href="#" class="nav-ul__a nav-ul__a_uppercase">Top Sales</a>
-						</li>
-						<li class="nav-ul__li">
-							<a href="#" class="nav-ul__a nav-ul__a_uppercase">Brand Focus</a>
-						</li>
-						<li class="nav-ul__li">
-							<a href="#" class="nav-ul__a nav-ul__a_uppercase nav-ul__a_active">Hi-tech</a>
-						</li>
-						<li class="nav-ul__li">
-							<a href="#" class="nav-ul__a nav-ul__a_uppercase">Best Sellers</a>
-						</li>
-						<li class="nav-ul__li">
-							<a href="#" class="nav-ul__a nav-ul__a_uppercase">Projects</a>
-						</li>
-					</ul>
-				</div>
-				<div class="header__subnav-right col-sm-4"></div>
-			</div>
-		</div>
-	</header>
-	<section class="offer">
-		<div class="container">
-			<div class="offer__left col-sm-5 col-sm-push-1">
-				<h1 class="offer__heading">iPhone 6 32Gb<br>Black</h1>
-				<p class="offer__desc">At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</p>
-				<button class="offer__button">Buy now</button>
-			</div>
-			<div class="offer__right col-sm-5 col-sm-push-1">
-				<img src="img/iphone-6-space-gray.png" alt="iPhone" class="offer__right-image">
-			</div>
-		</div>
-	</section>
-	<section class="advantage">
-		<div class="container">
-			<h2 class="advantage__heading adventage__margin">Почему с нами работают?</h2>
-			<div class="row">
-				<div class="col-sm-3 adventage__block">
-					<img src="img/advantage-1.png" alt="Преимущество 1" class="adventage__img">
-					<div class="advantage__subheading">Позвольте вашим<br>деньгам работать</div>
-					<div class="advantage__desc">Проценты по договорам займа выше банковских</div>
-				</div>
-				<div class="col-sm-3 adventage__block">
-					<img src="img/advantage-2.png" alt="Преимущество 2" class="adventage__img">
-					<div class="advantage__subheading">Зарабатывайте<br>вместе с нами</div>
-					<div class="advantage__desc">Мы вкладываем собственные средства</div>
-				</div>
-				<div class="col-sm-3 adventage__block">
-					<img src="img/advantage-3.png" alt="Преимущество 3" class="adventage__img">
-					<div class="advantage__subheading">Абсолютная<br>надежность</div>
-					<div class="advantage__desc">Все договоры займа обеспечены залогом</div>
-				</div>
-				<div class="col-sm-3 adventage__block">
-					<img src="img/advantage-4.png" alt="Преимущество 4" class="adventage__img">
-					<div class="advantage__subheading">Никакх<br>рисков</div>
-					<div class="advantage__desc">Наша профессиональная деятельность застрахована</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<script>
-		window.scrollTo(0, 0);
-		var alertClose = document.getElementById('lightbox__close');
-		alertClose.onclick = function(){
-			var lightbox = document.getElementsByClassName("lightbox")[0];
-			var body = document.getElementsByTagName("body")[0];
-			lightbox.remove();
-			body.removeAttribute("style");
-		};
-	</script>
+
+	<!-- JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
