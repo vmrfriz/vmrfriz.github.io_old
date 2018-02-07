@@ -23,7 +23,10 @@ a:focus {
 	white-space: nowrap;
 }
 
-.link:hover { text-decoration: none }
+.link:hover {
+	color: #0056b3;
+	text-decoration: none;
+}
 
 .link:after {
 	content: '';
@@ -39,6 +42,18 @@ a:focus {
 .link:hover:after {
 	width: 100%;
 	left: 0%;
+}
+
+@media (min-width: 1600px) {
+	.col-xxl-4 {
+		flex: 0 0 33.333337%;
+		max-width: 33.333337%;
+	}
+
+	.col-xxl-8 {
+		flex: 0 0 66.666667%;
+		max-width: 66.666667%;
+	}
 }
 
 .bg {
@@ -132,6 +147,11 @@ a:focus {
 
 .grid-row {
 	padding: 5px 0;
+}
+
+.grid-row > div {
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .gray {
