@@ -1,1 +1,5 @@
 trash/*
+test.*
+node_modules/*
+package.json
+gulpfile.js

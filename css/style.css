@@ -1,8 +1,8 @@
 html,
 body {
-	height: 100%;
-	font-size: 14px;
 	font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji";
+	font-size: 14px;
+	height: 100%;
 }
 
 a {
@@ -29,19 +29,19 @@ a:focus {
 }
 
 .link:after {
+	background-color: #0056b3;
 	content: '';
+	height: 1px;
+	left: 50%;
 	position: absolute;
 	top: 100%;
-	left: 50%;
-	width: 0%;
-	height: 1px;
-	background-color: #0056b3;
 	transition: all .15s ease-out;
+	width: 0%;
 }
 
 .link:hover:after {
-	width: 100%;
 	left: 0%;
+	width: 100%;
 }
 
 @media (min-width: 1600px) {
@@ -65,10 +65,10 @@ a:focus {
 }
 
 .alt-text {
-	text-align: center;
-	text-decoration: underline;
-	text-decoration-style: dotted;
 	color: #ccc;
+	text-align: center;
+	text-decoration-style: dotted;
+	text-decoration: underline;
 }
 
 .upper {
@@ -94,11 +94,11 @@ a:focus {
 
 .section {
 	background-color: #fff;
-	display: block;
 	box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
-	position: relative;
+	display: block;
 	min-height: 30px;
 	overflow: hidden;
+	position: relative;
 }
 
 .section:not(:last-child) {
@@ -115,10 +115,9 @@ a:focus {
 
 .section__heading {
 	border-bottom: 1px solid #eee;
-	padding: 10px;
-	font-size: 1.2rem;
-	text-transform: uppercase;
 	color: #999;
+	font-size: 1.2rem;
+	padding: 10px;
 	/*text-shadow: 0 0 1px rgba(0,0,0,.3);*/
 }
 
@@ -127,31 +126,31 @@ a:focus {
 }
 
 .aboutme {
-	padding-top: 45px;
 	padding-bottom: 25px;
+	padding-top: 45px;
 }
 
 .test {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	color: #fff;
-	padding-top: 15px;
 	background-image: linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,0));
+	bottom: 0;
+	color: #fff;
+	left: 0;
+	padding-top: 15px;
+	position: absolute;
+	right: 0;
 }
 
 .grid-table {
-	padding: 10px 15px;
+	padding: 10px;
 }
 
 .grid-row {
-	padding: 5px 0;
+	margin: 5px;
 }
 
 .grid-row > div {
-	text-overflow: ellipsis;
 	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .gray {
@@ -159,27 +158,27 @@ a:focus {
 }
 
 .news-item {
-	min-width: 260px;
-	width: 100%;
-	max-width: 90%;
 	display: inline-block;
 	margin-left: 25px;
-	position: relative;
+	max-width: 90%;
+	min-width: 260px;
 	overflow: visible;
 	padding: 5px;
+	position: relative;
+	width: 100%;
 }
 
 .news-item:after,
 .news-item:before {
+	border: 10px solid transparent;
+	border-right-color: #fff;
 	content: '';
+	height: 0;
+	margin-top: -10px;
 	position: absolute;
 	right: 100%;
 	top: 50%;
-	margin-top: -10px;
 	width: 0;
-	height: 0;
-	border: 10px solid transparent;
-	border-right-color: #fff;
 }
 
 .news-item:before {
@@ -225,36 +224,154 @@ a:focus {
 }
 
 .timeline:before {
+	background-color: #fff;
+	border-radius: 100px;
+	bottom: 0;
 	content: '';
 	height: 100%;
-	width: 7px;
-	border-radius: 100px;
-	background-color: #fff;
-	position: absolute;
 	left: 0;
+	position: absolute;
 	top: 0;
-	bottom: 0;
+	width: 7px;
 	z-index: 1;
 }
 
 .timeline-date {
-	margin: 50px 0 10px 25px;
 	color: #999;
+	margin: 50px 0 10px 25px;
 }
 
-.timeline-date:first-child {
+.timeline-date:first-of-type {
 	margin-top: 0;
 }
 
 /*
 .timeline:after {
-	content: '';
-	position: absolute;
-	height: 100%;
-	width: 9px;
-	left: 0;
-	bottom: 70%;
 	background-color: #09f;
+	bottom: 70%;
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	width: 9px;
 	z-index: 2;
 }
 */
+
+.btn-group { padding: 5px }
+.btn-group .btn { margin: 10px }
+.btn {
+	width: auto;
+	font-size: 1rem;
+	padding: 5px;
+	text-align: center;
+	background-color: #09d;
+	border-radius: 3px;
+	border: 1px solid #08c;
+	color: #fff;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+	color: #fff;
+}
+
+/* Modal window with black opacity background
+ *
+ * Example:
+ * <div id="some-id" class="modal">
+ *   <a href="#" class="modal-bg"></a>
+ *   <div class="modal-window">
+ *     <a href="#" class="modal-close">&times;</a>
+ *     Some content...
+ *   </div>
+ * </div>
+ */
+.modal,
+.modal-window {
+	display: none;
+}
+
+.modal:target {
+	position: fixed;
+	top: 0; right: 0; left: 0; bottom: 0;
+	-ms-align-items: center;
+	align-items: center;
+	background-color: rgba(0,0,0,.7);
+	display: flex;
+	margin-top: 0;
+	height: 100vh;
+	justify-content: center;
+	width: 100vw;
+	z-index: 10;
+}
+
+.modal-bg {
+	height: 100vh;
+	position: fixed;
+	top: 0px; left: 0; right: 0; bottom: 0;
+	width: 100vw;
+	z-index: 10;
+}
+
+.modal-close {
+	font-size: 30px;
+	line-height: 50px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	color: #ccc;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.modal:target .modal-window,
+.modal-window:target {
+	display: block;
+	background-color: #fff;
+	border-radius: 3px;
+	max-width: 90%;
+	min-height: 30px;
+	min-width: 300px;
+	width: 600px;
+	position: relative;
+	z-index: 10;
+}
+
+.modal-window--flat {
+	box-shadow: 0px 0px 40px #cdcbcb;
+	border-radius: 10px;
+}
+
+[draggable] {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	/* Required to make elements draggable in old WebKit */
+	-khtml-user-drag: element;
+	-webkit-user-drag: element;
+	box-shadow: 0px 0px 40px #cdcbcb;
+	transition: box-shadow .15s ease-out;
+}
+
+.moved {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+}
+
+.drag {
+	box-shadow: 0px 0px 40px #cdcbcb, 0 2px 20px 5px #bdbbbb;
+}
+
+.drag-area {
+	cursor: move;
+}
+
+/* Modal draggable window
+ *
+ */

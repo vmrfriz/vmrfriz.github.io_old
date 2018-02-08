@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Valeriy Grechukha - web-developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="favicon.ico" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
@@ -21,11 +22,11 @@
 								<img src="img/me.jpg" alt="My photo" class="img-fluid alt-text">
 								<div class="text-center padding h3 upper test">Валерий Гречуха</div>
 							</div>
-							<div class="section__heading"><i class="far fa-address-card"></i> Обо мне</div>
+							<div class="section__heading upper"><i class="far fa-address-card"></i> Обо мне</div>
 							<div class="padding">Независимый web-разработчик из Украины. Мне 21 год. Занимаюсь фрилансом с февраля 2017 года.</div>
 						</div>
 						<div class="section section--rounded">
-							<div class="section__heading"><i class="fas fa-link"></i> Связь</div>
+							<div class="section__heading upper"><i class="fas fa-link"></i> Связь</div>
 							<div class="grid-table">
 								<div class="row grid-row">
 									<div class="col-4 col-md-5 gray">ВКонтакте</div>
@@ -60,6 +61,10 @@
 									<div class="col"><a href="https://stackoverflow.com/users/8574047/" target="_blank" class="link">Valeriy Grechukha</a></div>
 								</div>
 								<div class="row grid-row">
+									<div class="col-4 col-md-5 gray">FreelanceHunt</div>
+									<div class="col"><a href="https://freelancehunt.com/freelancer/mrfriz.html?r=GyYJm" target="_blank" class="link">mrfriz</a></div>
+								</div>
+								<div class="row grid-row">
 									<div class="col-4 col-md-5 gray">E-mail</div>
 									<div class="col"><a href="mailto:v.mrfriz@gmail.com" class="link">v.mrfriz@gmail.com</a></div>
 								</div>
@@ -67,7 +72,7 @@
 						</div>
 
 						<div class="section section--rounded">
-							<div class="section__heading"><i class="fas fa-code"></i> Навыки</div>
+							<div class="section__heading upper"><i class="fas fa-code"></i> Навыки</div>
 							<div class="grid-table">
 								<div class="grid-row row">
 									<div class="col-4 col-md-5 gray">Языки,<br>технологии,<br>интеграция</div>
@@ -136,9 +141,14 @@
 										</p>
 
 										<p>
-											<small class="d-block gray">Fonts</small>
+											<small class="d-block gray">Icons</small>
 											<a href="https://fontawesome.com/" target="_blank" class="link">FontAwesome</a>,
+											<a href="http://glyph.smarticons.co/" target="_blank" class="link">Glyph</a>,
+											<a href="https://material.io/icons/" target="_blank" class="link">Material icons</a>,
 											<a href="http://fontello.com/" target="_blank" class="link">Fontello</a>,
+											<a href="https://feathericons.com/" target="_blank" class="link">Feather</a>,
+											<a href="http://demo.amitjakhu.com/dripicons/" target="_blank" class="link">Dripicons</a>,
+											<a href="http://ionicons.com/" target="_blank" class="link">ionicons</a>,
 											<a href="http://fontastic.me/" target="_blank" class="link">Fontastic</a>
 										</p>
 
@@ -162,6 +172,7 @@
 			<!-- Projects -->
 			<div class="col padding">
 				<div class="timeline">
+					<a name="portfolio"></a>
 
 					<div class="timeline-date">Январь 2018</div>
 					<a href="#" class="section news-item">
@@ -363,9 +374,26 @@
 		</div>
 	</div>
 
-	<!-- JavaScript -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<div id="calc" class="modal-window modal-window--shadow moved section" style="top:25px; right:25px; left: auto" draggable="true">
+		<a href="#" class="modal-close">&times;</a>
+		<div class="section__heading drag-area" data-drag="calc">Прайс-калькулятор</div>
+		<p class="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, corrupti, et! Facere iste, nisi eum cumque. Illum eveniet at minima dignissimos sapiente, enim amet maxime ab doloribus, nobis qui dolores, molestias optio. Aperiam a soluta necessitatibus id ipsam quo reprehenderit, rem atque possimus, nesciunt natus cupiditate, quaerat similique, sit vero.</p>
+		<div class="btn-group">
+			<a href="#" class="btn d-block">Close</a>
+		</div>
+	</div>
+
+	<div class="modal" id="msg">
+		<a href="#" class="modal-bg"></a>
+		<div class="modal-window section">
+			<a href="#" class="modal-close">&times;</a>
+			<div class="section__heading">Прайс-калькулятор</div>
+			<p class="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, corrupti, et! Facere iste, nisi eum cumque. Illum eveniet at minima dignissimos sapiente, enim amet maxime ab doloribus, nobis qui dolores, molestias optio. Aperiam a soluta necessitatibus id ipsam quo reprehenderit, rem atque possimus, nesciunt natus cupiditate, quaerat similique, sit vero.</p>
+			<div class="btn-group">
+				<a href="#" class="btn d-block">Close</a>
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>
