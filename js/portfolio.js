@@ -78,20 +78,15 @@ function updatePortfolio(responseText) {
 
 function todoModal(img, heading, description) {
 	let modal = document.getElementById('todo');
-	todo.querySelector('img').setAttribute('src', img);
-	todo.querySelector('.section__heading').innerText = heading;
-	todo.querySelector('p').innerText = description;
-	window.location.hash = 'todo';
+	modal.querySelector('.section__heading').innerText = heading;
+	modal.querySelector('p').innerText = description;
+	modal.querySelector('img').setAttribute('src', img);
+	modal.querySelector('img').onload = function() {
+		window.location.hash = 'todo';
+	};
 }
 
 ajax('GET', 'data/portfolio.json', true, updatePortfolio);
 
 // JS 'close' modals
 if( window.location.hash == '#todo' ) window.location.hash = '';
-let homeLinks = document.querySelectorAll('a[href="#"]');
-for(let i = 0; i < homeLinks.length; i++) {
-	homeLinks[i].onclick = function(e) {
-		e.preventDefault();
-		window.location.hash = '';
-	}
-}
