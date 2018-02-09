@@ -1,0 +1,292 @@
+{
+	"Январь 2018": [{
+		"thumb": "img/zoovadoo.com-wp.jpg",
+		"image": "img/origin/zoovadoo.com-wp.jpg",
+		"title": "Zoovadoo",
+		"description": "Посадка шаблона сайта на CMS WordPress, настройка викторин со следующим функционалом: набор очков за прафильные ответы и вывод результата, анализ фотографии Facebook на схожесть с установленными картинками.",
+		"link": null,
+		"rating": 4,
+		"types": [
+			"html",
+			"css",
+			"wordpress"
+		],
+		"deadline": null,
+		"time": null
+	}],
+	"Декабрь 2017": [{
+		"thumb": "img/imodservice.ru.jpg",
+		"image": "img/origin/imodservice.ru.jpg",
+		"title": "IMOD Service",
+		"description": "Перенос шаблона и функционала сайта с самописного движка на CMS WordPress.",
+		"link": null,
+		"rating": 4,
+		"types": [
+			"html",
+			"css",
+			"wordpress"
+		],
+		"deadline": null,
+		"time": null
+	}],
+	"Ноябрь 2017": [{
+			"thumb": "img/uda38.ru.jpg",
+			"image": "img/origin/uda38.ru.jpg",
+			"title": "Uda38",
+			"description": "Вёрстка формы обратной связи на своё усмотрение с отправкой данных формы на почту.",
+			"link": null,
+			"rating": 4,
+			"types": [
+				"html",
+				"css",
+				"wordpress"
+			],
+			"deadline": null,
+			"time": null
+		},
+		{
+			"thumb": "img/ezskimmerbag.jpg",
+			"image": "img/origin/ezskimmerbag.jpg",
+			"title": "exSkimmerBag",
+			"description": "Адаптивная вёрстка лендинга по PSD макету.",
+			"link": null,
+			"rating": 4,
+			"types": [
+				"html",
+				"css",
+				"wordpress"
+			],
+			"deadline": null,
+			"time": null
+		}
+	],
+	"Октябрь 2017": [{
+			"thumb": "img/delainvest.ru.jpg",
+			"image": "img/origin/delainvest.ru.jpg",
+			"title": "Деловые инвестиции",
+			"description": "Исправление косяков вестальщика, которому отдали макет вместо меня т.к. в цене не сошлись.",
+			"link": null,
+			"rating": 4,
+			"types": [
+				"html",
+				"css",
+				"wordpress"
+			],
+			"deadline": null,
+			"time": null
+		},
+		{
+			"thumb": "img/planetazoo.jpg",
+			"image": "img/origin/planetazoo.jpg",
+			"title": "Планета ZOO",
+			"description": "Адаптивная вёрстка по PSD макету, посадка на CMS WordPress, создание формы обратной связи с отправкой писем на e-mail.",
+			"link": null,
+			"rating": 4,
+			"types": [
+				"html",
+				"css",
+				"wordpress"
+			],
+			"deadline": null,
+			"time": null
+		}
+	],
+	"Сентябрь 2017": [{
+			"thumb": "img/zoovadoo.com.jpg",
+			"image": "img/origin/zoovadoo.com.jpg",
+			"title": "Zoovadoo",
+			"description": "Адаптивная вёрстка нескольких страниц по PSD макету для посадки на CMS WordPress.",
+			"link": null,
+			"rating": 4,
+			"types": [
+				"html",
+				"css",
+				"wordpress"
+			],
+			"deadline": null,
+			"time": null
+		},
+		{
+			"thumb": "img/ezpoolbag.jpg",
+			"image": "img/origin/ezpoolbag.jpg",
+			"title": "ezPoolBag",
+			"description": "Адаптивная вёрстка лендинга по PSD макету.",
+			"link": null,
+			"rating": 4,
+			"types": [
+				"html",
+				"css",
+				"wordpress"
+			],
+			"deadline": null,
+			"time": null
+		},
+		{
+			"thumb": "img/GMT.jpg",
+			"image": "img/origin/GMT.jpg",
+			"title": "GMT",
+			"description": "Адаптивная вёрстка нескольких страниц по PSD макету.",
+			"link": null,
+			"rating": 4,
+			"types": [
+				"html",
+				"css",
+				"wordpress"
+			],
+			"deadline": null,
+			"time": null
+		}
+	],
+	"Август 2017": [{
+			"thumb": "img/ballad.jpg",
+			"image": "img/origin/ballad.jpg",
+			"title": "Ballad",
+			"description": "Нестандартная задача. Адаптивная вёрстка по PSD макету, где элементы расположены почти случайно. Посадка на CMS WordPress, подключение WooCommerce.",
+			"link": null,
+			"rating": 4,
+			"types": [
+				"html",
+				"css",
+				"wordpress"
+			],
+			"deadline": null,
+			"time": null
+		},
+		{
+			"thumb": "img/captainsheep.jpg",
+			"image": "img/origin/captainsheep.jpg",
+			"title": "Captain Sheep",
+			"description": "Адаптивная вёрстка по PSD макету, посадка на WordPress.",
+			"link": null,
+			"rating": 4,
+			"types": [
+				"html",
+				"css",
+				"wordpress"
+			],
+			"deadline": null,
+			"time": null
+		}
+	],
+	"Июль 2017": [{
+			"thumb": "img/ipadretinawallpaper.com.jpg",
+			"image": "img/origin/ipadretinawallpaper.com.jpg",
+			"title": "iPad Retina Wallpaper",
+			"description": "Адаптивная вёрстка по PSD макету, посадка сайта на старый \"движок\" на PHP 5.4, дополнение функционала, перенос функционала с других сайтов заказчика.",
+			"link": null,
+			"rating": 4,
+			"types": [
+				"html",
+				"css",
+				"wordpress"
+			],
+			"deadline": null,
+			"time": null
+		},
+		{
+			"thumb": "img/bogemia.org.jpg",
+			"image": "img/origin/bogemia.org.jpg",
+			"title": "Bogemia",
+			"description": "Посадка шаблона сайта на CMS WordPress, добавление формы обратной связи с отправкой на e-mail.",
+			"link": null,
+			"rating": 4,
+			"types": [
+				"html",
+				"css",
+				"wordpress"
+			],
+			"deadline": null,
+			"time": null
+		},
+		{
+			"thumb": "img/planeta-tour.ru.jpg",
+			"image": "img/origin/planeta-tour.ru.jpg",
+			"title": "Планета-Тур",
+			"description": "Адаптивная вёрстка по PSD макету, посадка сайта на CMS WordPress, перенос базы статей с CMS Simpla 2011 года на Wordpress с оптимизацией дерева статей и каталогов, адаптация кода из старой БД для нового сайта.",
+			"link": null,
+			"rating": 4,
+			"types": [
+				"html",
+				"css",
+				"wordpress"
+			],
+			"deadline": null,
+			"time": null
+		}
+	],
+	"Июнь 2017": [{
+		"thumb": "img/vpnautobot.com.jpg",
+		"image": "img/origin/vpnautobot.com.jpg",
+		"title": "VPN Autobot",
+		"description": "Адаптивная вёрстка по PSD макету, посадка сайта на CMS WordPress, подключение платёжной системы PayPal.",
+		"link": null,
+		"rating": 4,
+		"types": [
+			"html",
+			"css",
+			"wordpress"
+		],
+		"deadline": null,
+		"time": null
+	}],
+	"Май 2017": [{
+		"thumb": "img/astana.bonapp.su.jpg",
+		"image": "img/origin/astana.bonapp.su.jpg",
+		"title": "Bonapp",
+		"description": "Адаптация макета под нужды заказчика: создание роутера для сайта, настройка домена, микроразметка, анимации, модальные окна.",
+		"link": null,
+		"rating": 4,
+		"types": [
+			"html",
+			"css",
+			"wordpress"
+		],
+		"deadline": null,
+		"time": null
+	}],
+	"Апрель 2017": [{
+		"thumb": "img/fortuna.org.kz.jpg",
+		"image": "img/origin/fortuna.org.kz.jpg",
+		"title": "Fortuna",
+		"description": "Адаптация макета под нужды заказчика, адаптивная вёрстка, написание простого бек-энда.",
+		"link": null,
+		"rating": 4,
+		"types": [
+			"html",
+			"css",
+			"wordpress"
+		],
+		"deadline": null,
+		"time": null
+	}],
+	"Март 2017": [{
+		"thumb": "img/forsnaim.jpg",
+		"image": "img/origin/forsnaim.jpg",
+		"title": "Forsnaim",
+		"description": "Адаптивная вёрстка по PSD макету с использованием сетки Bootstrap, написание сценариев для динамических элементов.",
+		"link": null,
+		"rating": 4,
+		"types": [
+			"html",
+			"css",
+			"wordpress"
+		],
+		"deadline": null,
+		"time": null
+	}],
+	"Февраль 2017": [{
+		"thumb": "img/scriptpatrol.tk.jpg",
+		"image": "img/origin/scriptpatrol.tk.jpg",
+		"title": "ScriptPatrol",
+		"description": "Вёрстка пользовательской и админской части \"из головы\". Создание API, интеграция с десктопным приложением, автоматическое обновление статистики ВК через VK API, уведомления о события в Telegram.",
+		"link": null,
+		"rating": 4,
+		"types": [
+			"html",
+			"css",
+			"wordpress"
+		],
+		"deadline": null,
+		"time": null
+	}]
+}
