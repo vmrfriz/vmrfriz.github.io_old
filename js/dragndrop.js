@@ -8,15 +8,17 @@ document.addEventListener("DOMContentLoaded", function(){
 			let elementStyles = that.currentStyle || window.getComputedStyle(that);
 			let clickX = e.pageX - that.offsetLeft + parseInt(elementStyles.marginLeft);
 			let clickY = e.pageY - that.offsetTop + parseInt(elementStyles.marginTop);
-			let maxX = document.documentElement.clientWidth - that.offsetWidth;
-			let maxY = document.documentElement.clientHeight - that.offsetHeight;
+			let documentWidth = document.documentElement.clientWidth;
+			let documentHeight = document.documentElement.clientHeight;
+			let maxX = documentWidth - that.offsetWidth;
+			let maxY = documentHeight - that.offsetHeight;
 			that.classList.add('moved', 'drag');
 
 			function moveAt(e) {
 				let newX = Math.max(0, e.pageX - clickX);
 				let newY = Math.max(0, e.pageY - clickY);
-				that.style.left = Math.min(newX, maxX) + 'px';
-				that.style.top  = Math.min(newY, maxY) + 'px';
+				that.style.left = Math.min(newX, maxX) / documentWidth * 100 + '%';
+				that.style.top  = Math.min(newY, maxY) / documentHeight * 100 + '%';
 			}
 			moveAt(e);
 

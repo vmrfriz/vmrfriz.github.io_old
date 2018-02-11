@@ -141,7 +141,7 @@ a:focus {
 }
 
 .grid-table {
-	padding: 10px;
+	padding: 10px 0;
 }
 
 .grid-row {
@@ -289,20 +289,20 @@ a:focus {
 }
 
 .modal:target {
-	position: fixed;
-	top: 0; right: 0; left: 0; bottom: 0;
 	-ms-align-items: center;
 	align-items: center;
-	background-color: rgba(0,0,0,.7);
 	display: flex;
-	margin-top: 0;
 	height: 100vh;
 	justify-content: center;
+	margin-top: 0;
+	position: fixed;
+	top: 0; right: 0; left: 0; bottom: 0;
 	width: 100vw;
 	z-index: 10;
 }
 
 .modal-bg {
+	background-color: rgba(0,0,0,.7);
 	height: 100vh;
 	position: fixed;
 	top: 0px; left: 0; right: 0; bottom: 0;
@@ -312,7 +312,6 @@ a:focus {
 
 .modal-close {
 	font-size: 30px;
-	line-height: 50px;
 	width: 50px;
 	height: 50px;
 	text-align: center;
@@ -324,6 +323,12 @@ a:focus {
 	cursor: pointer;
 }
 
+.modal-close--inverse:hover,
+.modal-close--inverse:active,
+.modal-close--inverse:focus {
+	color: #fff;
+}
+
 .modal:target .modal-window,
 .modal-window:target {
 	display: block;
@@ -332,9 +337,17 @@ a:focus {
 	max-width: 90%;
 	min-height: 30px;
 	min-width: 300px;
+	overflow-y: auto;
 	width: 600px;
 	position: relative;
 	z-index: 10;
+}
+
+.modal:target .modal-window--big,
+.modal-window--big:target {
+	max-width: 90%;
+	width: 90%;
+	height: 90%;
 }
 
 .modal-window--flat {
@@ -368,6 +381,131 @@ a:focus {
 	cursor: move;
 }
 
-/* Modal draggable window
- *
- */
+/* Calc window */
+.calc {
+	display: none;
+	min-width: 260px;
+	max-width: 300px;
+	width: 100%;
+	max-height: 100%;
+	height: 450px;
+	z-index: 10;
+}
+
+.calc:target {
+	display: block;
+}
+
+.calc__heading {
+	font-size: 1.2rem;
+	padding: 0 10px;
+	line-height: 45px;
+	height: 45px;
+	background-color: #09d;
+	color: #fff;
+}
+
+.calc__price {
+	text-align: right;
+	color: #777;
+	font-size: 2rem;
+	background-color: #eee;
+	padding: 0 15px;
+	height: 80px;
+	line-height: 80px;
+	overflow-y: auto;
+}
+
+.calc__list {
+	height: calc(100% - 125px);
+	overflow-y: auto;
+}
+
+.calc__list input[type="checkbox"] {
+	display: none;
+}
+
+.calc__list input + .calc__item:before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	border: 2px solid #777;
+	position: absolute;
+	left: 10px;
+	border-radius: 2px;
+	font-size: 1px;
+	top: 50%;
+	margin-top: -10px;
+	transition: all .15s ease-out;
+}
+
+.calc__list input:checked + .calc__item:before {
+	content: '\2714';
+	font-size: 2rem;
+	text-align: center;
+	line-height: .8rem;
+}
+
+.calc__list input:disabled + .calc__item:before {
+	background-color: #ddd;
+}
+
+/*.calc__item:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 1px;
+	background-color: #eee;
+	left: 40px;
+}*/
+
+.calc__item {
+	cursor: pointer;
+	display: block;
+	overflow: hidden;
+	padding: 5px 5px 1.2rem 50px;
+	position: relative;
+	margin-bottom: 0;
+	transition: box-shadow .2s ease-out;
+	width: 100%;
+	border-bottom: 1px solid #eee;
+}
+
+.calc__item:hover {
+
+}
+
+.calc__item-desc {
+	font-size: .9rem;
+	display: inline-block;
+	color: #aaa;
+	margin: 0;
+	padding: 0;
+}
+
+.calc__item-price {
+	font-size: .8rem;
+	position: absolute;
+	bottom: 0;
+	padding: .3rem;
+	right: 0;
+}
+
+.calc__item-price:before {
+	background-color: green;
+	content: '';
+	display: block;
+	width: 0;
+	height: 1px;
+	left: 0;
+	margin: 0 5px;
+	position: absolute;
+	top: 50%;
+	transition: all .15s ease-out;
+}
+
+.calc__list input:checked + .calc__item > .calc__item-price:before {
+	width: calc(100% - 10px);
+}
