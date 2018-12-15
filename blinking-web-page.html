@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blinking page</title>
+	<meta charset="utf-8">
+	<style>html,body{margin:0;padding:0}</style>
+</head>
+<body>
+	<script>
+		var colors = [
+			'd3029d',
+			'ff46f9',
+			'30a8e7',
+			'af7098',
+			'013823',
+			'b516a8',
+			'ff0000',
+			'ec18c8',
+			'00ffcc',
+			'000000',
+			'80b8aa',
+			'366922',
+			'110fbc',
+			'0f91c1',
+			'0000ff',
+			'00aa00',
+			'6b6a4f',
+			'ffcc00',
+			'307d11',
+			'fb9e4f',
+			'ffffff',
+			'3f13b8',
+			'af987c',
+		];
+		var currentColor = Math.floor(Math.random() * colors.length);
+		setInterval(function() {
+			document.body.style = 'background-color:#'+colors[currentColor];
+			currentColor = (currentColor + 1 >= colors.length) ? 0 : currentColor + 1;
+		}, 500);
+	</script>
+</body>
+</html>
